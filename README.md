@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+* Ruby version - 2.7.2
 
-* Ruby version
+* Rails version - 6.1.4
 
-* System dependencies
+## Configuration
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### seting up credentials
+* EDITOR="nano" rails credentials:edit --environment development
+```script 
+db:
+  database: project_api_development
+  username: "YOUR-USERNAME"
+  password: "YOUR-PASSWORD"
+```
+### run
+* rake db:reset
