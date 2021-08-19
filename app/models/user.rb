@@ -51,7 +51,7 @@ class User < ApplicationRecord
       
     end
     
-    result = result.sort_by(&:count)
+    result = result.sort_by { |data| data.last[:count] }.reverse
     
     result.map do |key, value|
       {
